@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# DriveLah
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a TypeScript-based web application for **DriveLah** with two main pages: **Subscription** and **Device**. The application is responsive, offering an optimized experience for both desktop and mobile screens. Data in this app persists across page reloads to ensure a seamless user experience.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Two Main Pages**:
+  - **Subscription**: A page for managing user subscriptions.
+  - **Device**: A page for managing device details, including image upload functionality.
+- **Responsive Design**: Adaptable for both desktop and mobile devices.
+- **State Persistence**: Data persists across page reloads, preserving user input and selections.
+- **Redux Integration**: Used for state management across pages, ensuring a robust data flow.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **TypeScript**
+- **React**
+- **Redux** for state management
+- **React Router** for page navigation
+- **Styled Components / CSS Modules** (optional, based on your setup) for styling
+- **LocalStorage** for persisting state data across reloads
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- **Node.js** and **npm** installed on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   git clone https://github.com/alokbkumar084/test-task-drive-lah.git
 
-### `npm run eject`
+2. Navigate into the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    cd test-task-drive-lah
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Running the Project
+Start the development server:
 
-## Learn More
+    npm run start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will launch the project on http://localhost:3000 by default.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
+Subscription Page
+Manage subscriptions through a user-friendly interface.
+Updates are saved across sessions using persistent state.
+
+## Device Page
+Manage device details, with support for image uploads.
+State persists using local storage and Redux, maintaining data even on page reload.
+
+## Scripts
+npm run start - Runs the app in development mode.
+npm run build - Builds the app for production to the build folder.
+npm run test - Launches the test runner.
+
+
